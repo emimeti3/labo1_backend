@@ -34,7 +34,7 @@ jobs:
             npm run build
       - run:
           command: |
-            mkdir -p backend/public
+            mkdir backend/public
             cp -R frontend/build/* backend/public/
       - persist_to_workspace:
           root: .
