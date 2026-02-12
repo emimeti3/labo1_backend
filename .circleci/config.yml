@@ -31,9 +31,6 @@ jobs:
           command: |
             cd frontend
             npm install
-      - run:
-          command: |
-            cd frontend
             npm run build
       - run:
           command: |
