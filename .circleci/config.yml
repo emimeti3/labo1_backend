@@ -14,11 +14,11 @@ jobs:
       - run:
           command: |
             cd backend
-            npm install
+            npm install -g npm@latest
       - run:
           command: |
             cd backend
-            npm test
+            npm run test
 
   integrationFrontEnd:
     executor: node/default
@@ -26,8 +26,6 @@ jobs:
       - run:
           command: |
             git clone https://github.com/emimeti3/labo1_backend.git backend
-      - run:
-          command: |
             git clone https://github.com/emimeti3/labo1_frontend.git frontend
       - run:
           command: |
